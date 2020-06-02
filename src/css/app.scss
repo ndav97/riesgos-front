@@ -1,0 +1,12 @@
+// app global css in SCSS form
+main.q-page{
+  padding-top: 15px !important;
+}
+.q-table__top.relative-position.row.items-center{
+  background-color:$fondo;
+  color: white;
+  font-family: monospace;
+}
+.q-field.row.no-wrap.items-start.q-input.q-field--outlined.q-field--labeled.q-field--dense{
+  background-color: white;
+}

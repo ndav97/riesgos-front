@@ -55,4 +55,12 @@ export default class Proyecto {
     }
     return false
   }
+
+  async delete () {
+    const { status, data } = await Axios.post(`1/proyecto/${this.id}`, { 'id': this.id })
+    if (status === 201) {
+      return data
+    }
+    return false
+  }
 }

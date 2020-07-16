@@ -63,7 +63,7 @@
               <q-markup-table separator='cell' flat>
                 <tbody>
                   <tr>
-                    <td colspan="2">TIPO DE RIESGO</td>
+                    <td colspan="3">TIPO DE RIESGO</td>
                     <td class="cellHeader">ESTRATEGIA</td>
                     <td class="cellHeader">RESPUESTA</td>
                     <td class="cellHeader">RESPONSABLE</td>
@@ -84,6 +84,9 @@
                         <tr :key="index3 + riesgoTres.id + 'T111'">
                           <td>
                             {{riesgo.c_codigo + '-' + riesgo.c_codigo + (index2+1) + '-' + (index3+1)}}
+                          </td>
+                          <td>
+                            {{riesgoTres.riesgoTercerNivel.c_nombre}}
                           </td>
                           <td>
                             <q-select

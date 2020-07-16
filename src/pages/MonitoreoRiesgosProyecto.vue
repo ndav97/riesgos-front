@@ -62,7 +62,7 @@
               <q-markup-table separator='cell' flat>
                 <tbody>
                   <tr>
-                    <td colspan="2">TIPO DE RIESGO</td>
+                    <td colspan="3">TIPO DE RIESGO</td>
                     <td class="cellHeader">MONITOREO Y CONTROL</td>
                     <td class="cellHeader">RESPONSABLE</td>
                     <td class="cellHeader">ESTADO</td>
@@ -85,6 +85,9 @@
                         <tr :key="index3 + riesgoTres.id + 'T111'">
                           <td>
                             {{riesgo.c_codigo + '-' + riesgo.c_codigo + (index2+1) + '-' + (index3+1)}}
+                          </td>
+                          <td>
+                            {{riesgoTres.riesgoTercerNivel.c_nombre}}
                           </td>
                           <td>
                             <q-input outlined v-model="riesgoTres.monitoreo.c_monitoreo_control" label="Monitoreo y control" dense>

@@ -34,6 +34,10 @@
                   <i class="fas fa-edit"></i>
                   Editar
                 </q-btn>
+                <q-btn @click="deleteProject(props.row)" color="primary" size="sm">
+                  <i class="fas fa-edit"></i>
+                  Elimar
+                </q-btn>
               </q-td>
               <q-td :props="props" key="c_codigo_proyecto" :style="{width: '200px', whiteSpace: 'normal'}">{{ props.row.c_codigo_proyecto }}</q-td>
               <q-td :props="props" key="c_nombre_proyecto" :style="{width: '300px', whiteSpace: 'normal'}">{{ props.row.c_nombre_proyecto }}</q-td>
@@ -102,8 +106,11 @@ export default {
         const res = await Proyecto.byUserId(this.identity.id)
         if (res) {
           this.projects = res.proyectos
+          return
         }
+        this.projects = []
       } catch (error) {
+        this.projects = []
         return false
       }
     },
@@ -115,6 +122,13 @@ export default {
       this.dialog.proyectoAdmin.proyecto = project
       this.dialog.proyectoAdmin.show = true
     },
+
+    async deleteProject (project) {
+      const proy = Proyecto.fromJson(project)
+      await proy.delete()
+      this.loadProyectos()
+    },
+
     cambiarPage () {
       //
     }

@@ -59,7 +59,10 @@
           </q-tab-panel>
           <q-tab-panel name="tabla" id="content">
             <div v-if="proyectoSelect">
-              <div class="text-h6" @click="getExcel">REPORTE PROYECTO</div>
+              <div class="row justify-center">
+                <q-btn label="Descargar Reporte" color="green" @click="getExcel"/>
+              </div>
+              <div class="text-h6">REPORTE PROYECTO</div>
               <q-markup-table separator='cell' flat>
                 <tbody>
                   <tr colspan="12">RIESGOS DEL PROYECTO</tr>

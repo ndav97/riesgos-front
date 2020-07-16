@@ -61,7 +61,8 @@ export default {
       links1: [
         { icon: 'photo', text: 'Registro de Riesgos de Proyecto', url: 'proyectos-riesgos' },
         { icon: 'photo', text: 'Respuesta de Riesgos de Proyecto', url: 'respuesta-riesgos' },
-        { icon: 'photo', text: 'Monitoreo de Riesgos de Proyecto', url: 'monitoreo-riesgos' }
+        { icon: 'photo', text: 'Monitoreo de Riesgos de Proyecto', url: 'monitoreo-riesgos' },
+        { icon: 'photo', text: 'Reporte de Riesgos de Proyecto', url: 'reporte' }
       ],
       links2: [
         { icon: 'photo', text: 'Proyectos', url: 'proyectos' },

@@ -8,6 +8,12 @@
         <h4>Software de Gestion de Riesgos</h4>
       </div>
       <div class="row justify-center">
+        <h3>Elaborado por: Charles Leman Chacon Quinto</h3>
+      </div>
+      <div class="row justify-center">
+        <h3>Teléfono: 980 251 211</h3>
+      </div>
+      <div class="row justify-center">
         <div class="col-2 q-pa-sm">
           <img src="statics/uncp.jpg" alt="">
         </div>

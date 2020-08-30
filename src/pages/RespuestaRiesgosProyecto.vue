@@ -60,6 +60,9 @@
           <q-tab-panel name="tabla">
             <div v-if="proyectoSelect">
               <div class="text-h6">Respuesta de Riesgos</div>
+              <div class="row justify-center">
+                <q-btn color="secondary" label="Descargar Lista de Respuestas de Riesgo" @click="descargarArchivo()"/>
+              </div>
               <q-markup-table separator='cell' flat>
                 <tbody>
                   <tr>
@@ -236,8 +239,8 @@ export default ({
       }
     },
 
-    cambiarPage () {
-      //
+    descargarArchivo () {
+      window.open('https://mega.nz/file/Xdol2LYK#Gs6kwRhgvenr60ilxj9yKFUDZtyY2IAmTQU1hlifwDs', '_blank')
     },
 
     sumRiesgosTierTres (riesgo) {

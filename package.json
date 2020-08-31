@@ -11,6 +11,7 @@
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
     "build": "yarn",
+    "build-q": "quasar build",
     "start": "node server.js",
     "dev": "quasar dev",
     "heroku-postbuild": "yarn && yarn build"
